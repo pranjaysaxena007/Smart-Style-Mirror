@@ -19,8 +19,6 @@ app_mode = st.sidebar.selectbox("Select Page",['Home','About','Dress Recommendat
 #Home Page
 if(app_mode == 'Home'):
     st.header("SMART STYLE MIRROR")
-    image_path ='hpimg.jpg'
-    st.image(image_path,use_column_width=True)
     st.markdown("""<div style="text-align: justify";>
 
 ## AI-Powered Fashion Assistant for Men's Clothing
@@ -110,9 +108,10 @@ Outfit combinations
 Multiple backgrounds
 
 Diverse lighting and angles
-
+    </div>""", unsafe_allow_html=True
+    )
 #Prediction Page
-elif(app_mode == 'Disease Detection'):
+elif(app_mode == 'Dress Recommendation'):
     st.header("Disease Detection")
     test_image = st.file_uploader('Choose an image:')
     #Show Image Button
