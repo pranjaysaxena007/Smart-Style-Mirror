@@ -112,7 +112,7 @@ Diverse lighting and angles
     )
 #Prediction Page
 elif(app_mode == 'Dress Recommendation'):
-    st.header("Disease Detection")
+    st.header("Dress Recommendation")
     test_image = st.file_uploader('Choose an image:')
     #Show Image Button
     try:
