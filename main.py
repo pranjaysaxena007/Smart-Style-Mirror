@@ -2,6 +2,28 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 
+def get_base64_of_bin_file(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# Load your local background image
+bg_image = get_base64_of_bin_file("1150238_OR68WQ0.jpg")
+
+# Inject CSS with the background image
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{bg_image}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # #Tensorflow Model Prediction
 def model_prediction(test_image):
     model = tf.keras.models.load_model("final_model.keras")
@@ -19,6 +41,8 @@ app_mode = st.sidebar.selectbox("Select Page",['Home','About','Dress Recommendat
 #Home Page
 if(app_mode == 'Home'):
     st.header("SMART STYLE MIRROR")
+    image_path ='foi.png'
+    st.image(image_path,use_container_width=True)
     st.markdown("""<div style="text-align: justify";>
 
 ## AI-Powered Fashion Assistant for Men's Clothing
