@@ -4,7 +4,7 @@ import numpy as np
 
 # #Tensorflow Model Prediction
 def model_prediction(test_image):
-    model = tf.keras.models.load_model("smart_style_mirror.keras")
+    model = tf.keras.models.load_model("final_model.keras")
     image = tf.keras.preprocessing.image.load_img(test_image,target_size=(224,224))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr]) #convert single image to batch
@@ -117,7 +117,7 @@ elif(app_mode == 'Dress Recommendation'):
     #Show Image Button
     try:
         if(st.button('Show Image')):
-            st.image(test_image,use_column_width=True)
+            st.image(test_image, use_container_width=True)
     except:
         st.write("Please INSERT an Image for Viewing")    
     #Predict button
