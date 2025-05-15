@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+import base64
 
 def get_base64_of_bin_file(file_path):
     with open(file_path, "rb") as f:
