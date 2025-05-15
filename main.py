@@ -9,7 +9,7 @@ def get_base64_of_bin_file(file_path):
     return base64.b64encode(data).decode()
 
 # Load your local background image
-bg_image = get_base64_of_bin_file("1150238_OR68WQ0.jpg")
+bg_image = get_base64_of_bin_file("background.png")
 
 # Inject CSS with the background image
 st.markdown(
