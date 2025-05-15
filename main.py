@@ -129,7 +129,7 @@ elif(app_mode == 'Dress Recommendation'):
                 result_index = model_prediction(test_image)
                 # Define Class
                 class_name = ['Casual', 'Formal', 'Funky', 'Traditional']
-                st.success(f'''Model is Predicting it's a  ""{class_name[result_index]}"" ''')
+                st.success(f'''Model is Predicting it's a  ""{class_name[result_index]} outfit""''')
                 st.snow()
         except:
             st.write("Please INSERT an Image for Prediction")
