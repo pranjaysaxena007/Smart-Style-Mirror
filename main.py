@@ -110,13 +110,13 @@ To train and evaluate the deep learning model for the Smart Styling Mirror, a cu
 
 #### Data Collection Sources
 
-**Online Resources**:
+- **Online Resources**:
 Images were collected from publicly available sources such as Google Images, fashion blogs, and style recommendation platforms.
 
-**Self-Captured Photos**:
+- **Self-Captured Photos**:
 To increase authenticity and variability, several images were captured personally under different lighting conditions, poses, and backgrounds.
 
-**Manual Tagging**:
+- **Manual Tagging**:
 Each image was manually labeled with one or more style tags based on clothing type, color, and context.
 
 
@@ -124,15 +124,15 @@ Each image was manually labeled with one or more style tags based on clothing ty
 
 **Total Images**:
 
-Classes: 4 (Casual, Formal, Funky, Traditional)
+    - Classes: 4 (Casual, Formal, Funky, Traditional)
 
 Variations included:
 
-Outfit combinations
+    - Outfit combinations
 
-Multiple backgrounds
+    - Multiple backgrounds
 
-Diverse lighting and angles
+    - Diverse lighting and angles
     </div>""", unsafe_allow_html=True
     )
 #Prediction Page
