@@ -1,31 +1,31 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-# import base64
+import base64
 
-# def get_base64_of_bin_file(file_path):
-#     with open(file_path, "rb") as f:
-#         data = f.read()
-#     return base64.b64encode(data).decode()
+def get_base64_of_bin_file(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
-# # Load your local background image
-# bg_image = get_base64_of_bin_file("background.png")
+# Load your local background image
+bg_image = get_base64_of_bin_file("b.jpg")
 
-# # Inject CSS with the background image
-# st.markdown(
-#     f"""
-#     <style>
-#     .stApp {{
-#         background-image: url("data:image/jpg;base64,{bg_image}");
-#         background-size: cover;
-#         background-position: center;
-#         background-attachment: fixed;
-#     }}
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
-# #Tensorflow Model Prediction
+# Inject CSS with the background image
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{bg_image}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+#Tensorflow Model Prediction
 def model_prediction(test_image):
     model = tf.keras.models.load_model("final_model.keras")
     image = tf.keras.preprocessing.image.load_img(test_image,target_size=(224,224))
