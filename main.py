@@ -124,15 +124,15 @@ Each image was manually labeled with one or more style tags based on clothing ty
 
 **Total Images**:
 
-    - Classes: 4 (Casual, Formal, Funky, Traditional)
+- Classes: 4 (Casual, Formal, Funky, Traditional)
 
 Variations included:
 
-    - Outfit combinations
+- Outfit combinations
 
-    - Multiple backgrounds
+- Multiple backgrounds
 
-    - Diverse lighting and angles
+- Diverse lighting and angles
     </div>""", unsafe_allow_html=True
     )
 #Prediction Page
