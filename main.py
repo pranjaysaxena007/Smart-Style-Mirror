@@ -65,13 +65,13 @@ Using a camera or uploaded image, the system identifies clothing items a person 
 2. **Deep Learning-Based Clothing Analysis**
 Our custom-trained CNN model classifies the clothing style into four main categories:
 
-Casual
+- Casual
 
-Formal
+- Formal
 
-Funky
+- Funky
 
-Traditional
+- Traditional
 
 
 3. **Smart Style Recommendation**
@@ -99,13 +99,13 @@ elif(app_mode == 'About'):
 
 To train and evaluate the deep learning model for the Smart Styling Mirror, a custom clothing dataset was created. The dataset includes a diverse set of male outfit images, carefully curated to represent four primary style categories:
 
-Casual
+- Casual
 
-Formal
+- Formal
 
-Funky
+- Funky
 
-Traditional
+- Traditional
 
 
 #### Data Collection Sources
